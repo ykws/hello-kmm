@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: set up JDK 17
+      uses: actions/setup-java@v2
+      with:
+        java-version: '17'
+        distribution: 'adopt'
+        cache: gradle
+
+    - name: Grant execute permission for gradlew
+      run: chmod +x gradlew
+    - name: Assembles and tests this project
+      run: ./gradlew build 
+    - name: Compile a klibrary from the 'main' complilation for target 'native'
+      run: ./gradlew compileKotlinIos
+    - name: Executes Kotlin/Native unit tests for target ios
+      run: ./gradlew iosTest
