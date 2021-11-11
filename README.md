@@ -1,5 +1,7 @@
 # Hello, KMM
 
+[![CI](https://github.com/ykws/hello-kmm/actions/workflows/ci.yml/badge.svg)](https://github.com/ykws/hello-kmm/actions/workflows/ci.yml)
+
 [Getting started Kotlin Multiplatform Mobile](https://kotlinlang.org/docs/kmm-getting-started.html)
 
 ## Environment
