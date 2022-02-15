@@ -6,7 +6,7 @@
 
 ## Environment
 - Mac mini (M1, 2020)
-- macOS Big Sur 11.5.1
-- Android Studio Arctic Fox 2020.3.1 Patch 3
-- Xcode 13.1
+- macOS Big Sur 11.6
+- Android Studio Bumblebee 2021.1.1 Patch 1
+- Xcode 13.2.1
 - [Java 17](https://www.oracle.com/java/technologies/downloads/#jdk17-mac)
