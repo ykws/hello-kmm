@@ -1,3 +1,4 @@
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 pluginManagement {
     repositories {
         google()
@@ -6,6 +7,13 @@ pluginManagement {
     }
 }
 
-rootProject.name = "KMM_Application"
+dependencyResolutionManagement {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "My_App"
 include(":androidApp")
 include(":shared")
